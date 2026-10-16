@@ -20,6 +20,7 @@ calls after building its own `SWEBenchEnvironment` and minimizer.
 | `submission_filter.py` | `filter_to_submission_paths` — drops scratch edits the agent never submitted |
 | `cli/` | The single-instance entry point (`traj_cli`) + shared orchestration infra (`common.py`). See [`cli/AGENTS.md`](cli/AGENTS.md). |
 | `utils/` | Domain helpers — env bootstrap, diff parsing, HF access, instance ids. See [`utils/AGENTS.md`](utils/AGENTS.md). |
+| `experiments/` | File-based cleanup evaluation over immutable edit selections; offline preparation/replay plus frozen proxy checks, residual TRIM, and opt-in held-out evaluation. See [`experiments/AGENTS.md`](experiments/AGENTS.md). |
 | `example_code/run_swebench_minimization.py` | Pipeline step 2, the batch driver |
 | `example_code/swebench_pipeline/` | Pipeline steps 3–5. See [its AGENTS.md](example_code/swebench_pipeline/AGENTS.md). |
 
